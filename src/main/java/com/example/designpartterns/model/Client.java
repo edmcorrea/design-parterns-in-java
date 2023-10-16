@@ -14,6 +14,7 @@ public class Client {
 	private Long id;
 	private String nome;
 	@ManyToOne
+  private Address endereco;
 
 	public Long getId() {
 		return id;
@@ -31,4 +32,11 @@ public class Client {
 		this.nome = nome;
 	}
 
+  public Address getEndereco() {
+		return endereco;
+	}
+
+	public void setEndereco(Address endereco) {
+		this.endereco = endereco;
+	}
 }
